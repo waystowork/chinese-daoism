@@ -176,7 +176,7 @@ function parseSingle(jsonIn) {
     title = commonReplace(title);
     description = jsonIn[2].children[1].children[13].attributes[1].value;
     description = commonReplace(description);
-    paragraphs_raw = jsonIn[2].children[3].children[1].children[9].children[3].children[1].children;
+    paragraphs_raw = jsonIn[2].children[3].children[1].children[7].children[3].children[1].children;
     paragraphs = new Array();
     paragraphs_raw.forEach(element => {
         if (element.tagName == "p") {
@@ -258,7 +258,7 @@ function parseMultiContent(jsonIn) {
     title = commonReplace(title);
     description = jsonIn[2].children[1].children[11].attributes[1].value;
     description = commonReplace(description);
-    paragraphs_raw = jsonIn[2].children[3].children[7].children[3].children;
+    paragraphs_raw = jsonIn[2].children[3].children[5].children[3].children;
     paragraphs = new Array();
     paragraphs_raw.forEach(element => {
         if (element.tagName == "p") {
