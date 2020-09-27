@@ -4,7 +4,7 @@ var html2json = require('himalaya');
 const { exit } = require('process');
 const { assert } = require('console');
 
-const inputPath = "/media/user/data/网站爬取/www.daorenjia.com"
+const inputPath = "D:/网站爬取/www.daorenjia.com"
 const outputPath = "./json"
 
 
